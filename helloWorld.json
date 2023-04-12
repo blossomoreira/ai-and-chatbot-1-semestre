@@ -1,0 +1,74 @@
+[
+    {
+        "id": "8c203834b440389b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e9301ac2f43748c",
+        "type": "inject",
+        "z": "8c203834b440389b",
+        "name": "Hello word!",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello word!",
+        "payloadType": "str",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "793f68ab1bb8625e"
+            ]
+        ]
+    },
+    {
+        "id": "793f68ab1bb8625e",
+        "type": "function",
+        "z": "8c203834b440389b",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "34ba1c8221b4d230"
+            ]
+        ]
+    },
+    {
+        "id": "34ba1c8221b4d230",
+        "type": "debug",
+        "z": "8c203834b440389b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 120,
+        "wires": []
+    }
+]
